@@ -15,13 +15,13 @@ print("--------LETRA A----------\n\n")
 
 qtd_alunos = int(input("Digite a quantidade de alunos: "))
 
-matriz = list()
-
-medias = list()
+matriz = list() # CRIA UMA VARIAVEL CHAMADA MATRIZ COMO UMA LISTA
 
 
+#ADICIONA DUAS LISTAS DENTRO DA LISTA MATRIZ 
 for i in range(qtd_alunos):
 	matriz.append([])
+
 
 for i in range(qtd_alunos):
 	nome = input("Digite o nome do aluno: ")
@@ -39,10 +39,10 @@ for i in range(qtd_alunos):
 	segunda_nota = float(input("Digite a segunda nota do aluno: "))
 	matriz[i].append(segunda_nota)
 
-	extra_nota = int(input("Digite a nota extra do aluno: "))
+	extra_nota = float(input("Digite a nota extra do aluno: "))
 	matriz[i].append(extra_nota)
 
-	matriz[i].append((primeira_nota + segunda_nota + extra_nota) / 2 )
+	matriz[i].append((primeira_nota + segunda_nota + extra_nota) / 2 ) #PARTE DA LETRA B
 
 
 
@@ -50,7 +50,7 @@ print("\n\n---------LETRA B------------\n\n")
 print(matriz)
 
 for i in matriz:
-	if i[6] >= 5.0 and i[1] <= 10:
+	if i[6] >= 5.0 and i[1] <= 10: #VERIFICA CADA LINHA DA MATRIZ
 		print("Aluno:", i[0]+": ", "Aprovado")
 	else:
 		print("Aluno:", i[0]+": ", "Reprovado")
@@ -58,18 +58,23 @@ for i in matriz:
 
 print("\n\n----------LETRA C--------------\n\n")
 
-maior_media = 0
-menor_media = 100000
+
+maior_media = -1
+
+menor_media = 112312
+
+#----VERIFICA A MEDIA DE CADA LINHA-------
 
 for i in matriz:
 	if i[6] > maior_media:
 		maior_media = i[6]
 		maior_media_matricula = i[2]
 
-	
+
 	if i[6] < menor_media:
 		menor_media = i[6]
 		menor_media_matricula = i[2]
+
 print("Maior media:", maior_media, "Matricula:", maior_media_matricula, "\nMenor media: ", menor_media, "Matricula:", menor_media_matricula)
 
 
