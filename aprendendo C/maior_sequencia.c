@@ -36,7 +36,6 @@ int main(){
 
 		}
 
-
 		//VERIFICA SE A SOMA DA SEQUENCIA INICIO ATE FIM EH MAIOR DO QUE A MAIOR SOMA ATE O MOMENTO
 		if (soma > maior_soma){
 			maior_soma = soma;
@@ -45,7 +44,6 @@ int main(){
 			}
 		soma = 0;
 		}
-
 
 
 	}

@@ -62,10 +62,10 @@ int main(){
 
 
 //-----MULTIPLICANDO MATRIZES--------------
-	for(k=0; k<3; k++){			
+	for(k=0; k<3; k++){	
 		for(i=0; i<3; i++){
 			for(j=0; j<3; j++){
-					matriz_mult[k][i] += matriz_1[i][j]*matriz_2[j][i];
+					matriz_mult[k][i] += matriz_1[k][j]*matriz_2[j][i];
 				}
 			}
 
