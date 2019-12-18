@@ -1,0 +1,19 @@
+{
+  "name": "aprendendo",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "index.js",
+  "repository": "n",
+  "author": "julio",
+  "license": "n",
+  "private": false,
+  "dependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "babel-cli": "^7.0.0-0"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+}

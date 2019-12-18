@@ -7,9 +7,6 @@ int main(){
 	printf("Digite as 3 notas do aluno: ");
 	scanf("%f, %f, %f", &nota_1, &nota_2, &nota_3);
 
-	
-
-	
 
 	if (nota_1 < 0 || nota_2 < 0 || nota_3 < 0){
 		printf("\nDigite a nota da segunda chamada do aluno: ");
